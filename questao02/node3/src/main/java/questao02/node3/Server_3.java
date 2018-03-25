@@ -18,7 +18,7 @@ public class Server_3 {
     public static void main(String[] args) throws NotBoundException {
         try {
             Registry reg = LocateRegistry.createRegistry(1099);
-            reg.rebind("rmi://no3", new ContractImpl());
+            reg.rebind("rmi:/no3", new ContractImpl());
         } catch (RemoteException ex) {
             System.out.println("erro ao dar get no registrador global : 3");
         }
