@@ -1,3 +1,5 @@
-FROM openjdk:8-jdk-alpine
-COPY target/client-1.0-SNAPSHOT-jar-with-dependencies.jar client-1.0-SNAPSHOT-jar-with-dependencies.jar
-ENTRYPOINT ["java", "-jar", "client-1.0-SNAPSHOT-jar-with-dependencies.jar"]
+FROM maven:3.3.9-jdk-8
+ADD . dir
+WORKDIR "dir"
+CMD mvn exec:java -Dexec.mainClass="questao02.client.Client"
+
