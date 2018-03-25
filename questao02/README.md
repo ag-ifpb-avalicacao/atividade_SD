@@ -1,4 +1,4 @@
-## Client
+# Client
 
 1) Você está colocando um comando para compilar e empacotar fora do docker, para quê?
 
@@ -19,5 +19,8 @@ que sua aplicação não está preparada para isto!
 Contract contract = (Contract) LocateRegistry.getRegistry("172.18.0.2", 1099).lookup("rmi://no1");
 ```
 
+4) Este é um dos motivos pelo qual é solicito que todos coloquem em docker:
+
+![Erro do Maven](screenshots/Screen Shot 2018-03-25 at 08.26.17.png)
 
 
