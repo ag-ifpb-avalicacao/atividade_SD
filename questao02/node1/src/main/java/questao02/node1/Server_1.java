@@ -17,7 +17,7 @@ public class Server_1 {
     public static void main(String[] args) {
         try {
             Registry reg = LocateRegistry.createRegistry(1099);
-            reg.rebind("rmi://no1", new ContractImpl());
+            reg.rebind("rmi:/no1", new ContractImpl());
         } catch (RemoteException ex) {
             System.out.println("erro ao dar get no registrador global : 2");
         }

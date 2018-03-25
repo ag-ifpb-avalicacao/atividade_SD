@@ -18,7 +18,7 @@ public class Client {
 
     public static void main(String[] args) {
         try {
-            Contract contract = (Contract) LocateRegistry.getRegistry("no1", 1099).lookup("rmi://no1");
+            Contract contract = (Contract) LocateRegistry.getRegistry("no1", 1099).lookup("rmi:/no1");
             System.out.println("calling operation...");
             int result = contract.operation_2(2, 4);
             System.out.println(result);
