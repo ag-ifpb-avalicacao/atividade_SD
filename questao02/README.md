@@ -21,7 +21,7 @@ Contract contract = (Contract) LocateRegistry.getRegistry("172.18.0.2", 1099).lo
 
 4) Este é um dos motivos pelo qual é solicito que todos coloquem em docker:
 
-[Erro do Maven](https://raw.githubusercontent.com/ag-ifpb-avalicacao/atividade_SD/master/questao02/screenshots/Screen%20Shot%202018-03-25%20at%2008.26.17.png)
+![Erro do Maven](https://raw.githubusercontent.com/ag-ifpb-avalicacao/atividade_SD/master/questao02/screenshots/Screen%20Shot%202018-03-25%20at%2008.26.17.png)
 
 
 
