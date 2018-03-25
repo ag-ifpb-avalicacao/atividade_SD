@@ -1,11 +1,14 @@
 #!/bin/bash
 
-cd no3;
+cd client;
 sh kill.sh;
 cd ..;
-cd no2;
+cd node1;
 sh kill.sh;
 cd ..;
-cd no1;
+cd node2;
+sh kill.sh;
+cd ..;
+cd node3;
 sh kill.sh;
 cd ..;

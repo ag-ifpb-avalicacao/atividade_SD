@@ -29,7 +29,7 @@ public class ContractImpl extends UnicastRemoteObject implements Contract {
     @Override
     public int operation_2(int x, int y) throws RemoteException {
         try {
-            Contract contract = (Contract) LocateRegistry.getRegistry(2001).lookup("rmi://no3");
+            Contract contract = (Contract) LocateRegistry.getRegistry("172.18.0.4", 1099).lookup("rmi://no3");
             return contract.operation_2(x, y);
         } catch (NotBoundException ex) {
             ex.printStackTrace();

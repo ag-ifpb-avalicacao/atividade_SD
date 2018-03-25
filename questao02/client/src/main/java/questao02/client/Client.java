@@ -18,7 +18,7 @@ public class Client {
 
     public static void main(String[] args) {
         try {
-            Contract contract = (Contract) LocateRegistry.getRegistry(1099).lookup("rmi://no1");
+            Contract contract = (Contract) LocateRegistry.getRegistry("172.18.0.2", 1099).lookup("rmi://no1");
             int result = contract.operation_2(2, 4);
             System.out.println(result);
         } catch (NotBoundException | RemoteException ex) {

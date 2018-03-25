@@ -14,4 +14,16 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <name>no3</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.4</version>
+                <configuration>
+                    <mainClass>questao06.node3.No3</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
